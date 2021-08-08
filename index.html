@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Utilities by LOSDEV</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/images/icon.png" sizes="32x32"> 
+    <link rel="fluid-icon" href="./assets/images/icon.png" title="Time Lived">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <main>
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+                <a href="#_" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="logo">Dev Utilities</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-page="home">
+                            <i class="bi bi-bookmark-dash"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" data-page="unix-time-converter">
+                            <i class="bi bi-clock"></i> Unix Time Converter
+                        </a>
+                    </li>
+                </ul>
+                <div class="created">
+                    Created by <b>LOSDEV</b> with ❤️
+                </div>
+            </div>
+        </main>
+
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="page" id="home">
+                    <h1>Welcome to Dev Utilities</h1>
+                    <div class="description">
+                        This is a small utility web app for developers. Inspired by <a href="https://github.com/DevUtilsApp/DevUtils-app"  target="_blank">DevUtils-app</a>.<br>
+                        You can improve this in <a href="https://github.com/losdevpath/dev-utils" target="_blank">dev-utils</a> repository.
+                    </div>
+                </div>
+                <div class="page" id="unix-time-converter">
+                    <h1>Unix Time Converter</h1>
+                    <div class="description">Convert epoch unix timestamp in other formats.</div>
+                    <div class="utilbox">
+                        <input type="number">
+                        <div class="results">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="result">GMT <span id="unix-gmtdate"></span></div>
+                                </div>
+                                <div class="col">
+                                    <div class="result">Relative <span id="unix-relative"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                   <div class="result">UTC <span class="minopt">ISO 8601</span> <span id="unix-utcdate"></span></div>
+                                </div>
+                                <div class="col">
+                                    <div class="result">Day of the year <span id="unix-dayoftheyear"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                     <div class="result">Human <span id="unix-human"></span></div>
+                                </div>
+                                <div class="col">
+                                    <div class="result">Week of the year <span id="unix-weekoftheyear"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="result">Unix time <span id="unix-unixtime"></span></div>
+                                </div>
+                                <div class="col">
+                                    <div class="result">Leap year <span id="unix-isleapyear"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+    <!-- Utilities-->
+    <script src="./assets/js/utils/unix-time-converter.js"></script>
+    
+</body>
+</html>
